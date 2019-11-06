@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #282828;
+  --accent-color: #20a9d3;
+  --white-color: #ffffff;
+}
+
+a {
+  color: var(--primary-color) !important;
+}
+
+input,
+button {
+  border-radius: 0 !important;
+  outline: none !important;
+}
+
+hr {
+  width: 75%;
+  border: 1px solid var(--primary-color);
+}

@@ -1,12 +1,18 @@
 import React from 'react';
+// IMPORTING COMPONENTS
+import Home from './components/pages/Home';
+// IMPORTING THE CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
+import WeatherState from './context/weather/WeatherState';
+
+const App = () => {
   return (
-    <div>
-      <h1>App Component</h1>
-    </div>
+    <WeatherState>
+      <Home />
+    </WeatherState>
   );
-}
+};
 
 export default App;
