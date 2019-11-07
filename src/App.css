@@ -4,6 +4,10 @@
   --white-color: #ffffff;
 }
 
+* {
+  font-weight: 400 !important;
+}
+
 a {
   color: var(--primary-color) !important;
 }
@@ -14,7 +18,14 @@ button {
   outline: none !important;
 }
 
-hr {
-  width: 75%;
-  border: 1px solid var(--primary-color);
+.brand {
+  font-weight: 500 !important;
+}
+
+.temperature {
+  font-size: 8.8rem;
+}
+
+.tabs {
+  cursor: pointer;
 }

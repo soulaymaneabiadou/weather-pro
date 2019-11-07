@@ -1,18 +1,25 @@
 # Weather PRO
 
-## ABOUT:
-
-A weather app built in React using the DarkSky and Google Geolocation APIs
+A weather app built in React.
 
 It was built using the following:
 
 - React JS
+- Context API
+- Reactstrap
+- Bootstrap
 - Dark Sky API
-- Google Geolocation API
+- React-ChartJS-2
+- ChartJS
 
-## Scripts:
+## SCRIPTS:
 
 ```
 npm install // to install the dependencies listed in the package.json file.
 npm start   // to start the development server
 ```
+
+## NOTES:
+
+Please note that this is a simple weather app that is using the Dark Sky API for development purposes only. The API Key is not available to the public.
+In order to use this APP, you need to get an API KEY from Dark Sky

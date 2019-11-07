@@ -3,9 +3,9 @@ import { Container, Navbar, NavbarBrand } from 'reactstrap';
 
 const NavBar = () => {
   return (
-    <Navbar dark color='light'>
+    <Navbar color='light'>
       <Container>
-        <NavbarBrand href='/'>Weather PRO</NavbarBrand>
+        <NavbarBrand className='brand'>Weather PRO</NavbarBrand>
       </Container>
     </Navbar>
   );

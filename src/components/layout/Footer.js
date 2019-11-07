@@ -5,14 +5,16 @@ const Footer = () => {
   return (
     <Fragment>
       <Container>
-        <hr className='mb-0' />
-        <Nav>
-          <NavLink className='ml-auto' href='#'>
-            Weather API
+        <hr className='mb-1' />
+        <Nav className='ml-auto mb-2'>
+          <NavLink
+            className='ml-auto mr-2'
+            href='https://darksky.net/poweredby/'
+          >
+            Powered by Dark Sky
           </NavLink>{' '}
-          <NavLink href='#'>Google Geocoding API</NavLink>{' '}
-          <NavLink className='mr-auto' href='#'>
-            Github repo
+          <NavLink className='mr-auto ml-2' href='#'>
+            Project's Github Repo
           </NavLink>
         </Nav>
       </Container>
