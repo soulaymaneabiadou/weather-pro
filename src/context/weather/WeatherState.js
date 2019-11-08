@@ -2,7 +2,6 @@ import React, { useReducer } from 'react';
 import WeatherContext from './WeatherContext';
 import WeatherReducer from './WeatherReducer';
 import { SET_WEATHER } from '../types';
-import keys from '../../config/keys';
 
 const WeatherState = props => {
   const initialState = {
@@ -16,7 +15,7 @@ const WeatherState = props => {
     try {
       const { latitude, longitude } = position.coords;
       const res = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${keys.dsKey}/${latitude},${longitude}?units=si`
+        `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${process.env.REACT_APP_DS_KEY}/${latitude},${longitude}?units=si`
       );
       const data = await res.json();
       dispatch({ type: SET_WEATHER, payload: data });
