@@ -22,7 +22,7 @@ const WeatherState = props => {
     try {
       const { latitude, longitude } = position.coords;
       const res = await fetch(
-        `https://api.darksky.net/forecast/${dsKey}/${latitude},${longitude}?units=si`
+        `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${dsKey}/${latitude},${longitude}?units=si`
       );
       const data = await res.json();
       dispatch({ type: SET_WEATHER, payload: data });
